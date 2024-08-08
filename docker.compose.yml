@@ -404,10 +404,7 @@ services:
     environment:
       LOGFLARE_API_KEY: ${LOGFLARE_API_KEY}
     command: [ "--config", "etc/vector/vector.yml" ]
-
-volumes:
-  db-config:
-
+    
 minio:
     image: minio/minio
     ports:
@@ -436,3 +433,5 @@ minio-createbucket:
       /usr/bin/mc mb supa-minio/stub;
       exit 0;
       "
+volumes:
+  db-config:
