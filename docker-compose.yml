@@ -256,7 +256,7 @@ services:
       FILE_STORAGE_BACKEND_PATH: /var/lib/storage
       TENANT_ID: ${GLOBAL_S3_BUCKET}
       # TODO: https://github.com/supabase/storage-api/issues/55
-      REGION: ${GLOBAL_S3_REGION}
+      REGION: stub
       ENABLE_IMAGE_TRANSFORMATION: "true"
       IMGPROXY_URL: http://imgproxy:5001
     volumes:
