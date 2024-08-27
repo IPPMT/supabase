@@ -254,9 +254,9 @@ services:
       AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
       AWS_DEFAULT_REGION: ${GLOBAL_S3_REGION}
       FILE_STORAGE_BACKEND_PATH: /var/lib/storage
-      TENANT_ID: ${GLOBAL_S3_BUCKET}
+      TENANT_ID: stub
       # TODO: https://github.com/supabase/storage-api/issues/55
-      REGION: stub
+      REGION: ${GLOBAL_S3_REGION}
       ENABLE_IMAGE_TRANSFORMATION: "true"
       IMGPROXY_URL: http://imgproxy:5001
     volumes:
